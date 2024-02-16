@@ -1,0 +1,166 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.home-btn {
+  background: linear-gradient(56deg, #45c4f9, #7d09ff 50.33%, #ff0be5);
+}
+
+@media (min-width: 992px) {
+  ::-webkit-scrollbar {
+    width: 5px;
+  }
+  ::-webkit-scrollbar-track {
+    border: none;
+    background-color: transparent;
+  }
+  ::-webkit-scrollbar-thumb {
+    background: #fea276;
+    height: 1rem;
+  }
+}
+
+.team-together_cont::before {
+  content: "";
+  position: absolute;
+  inset-inline-start: 50%;
+  inset-block-start: 50%;
+  z-index: -1;
+  /* inline-size: 766px;
+  block-size: 766px; */
+  background-image: url(./assets/home-callour-circle-gradient.svg);
+  background-size: cover;
+  transform: translate(-50%, -50%);
+}
+
+.perfectfit-btn {
+  background: linear-gradient(
+    89deg,
+    #45c4f9 -25.12%,
+    #7d09ff 46.26%,
+    #ff0be5 116.7%
+  );
+}
+
+.unleash-bg {
+  background-image: url(./assets/animated-callout-bg.png);
+}
+
+.testing-gradient {
+  background-image: linear-gradient(
+    80deg,
+    #45c4f9 14.49%,
+    rgba(137, 32, 254, 0.81) 48.2%,
+    #ff0be5 94.81%
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent; /* For Safari/WebKit browsers */
+  background-clip: text;
+  color: transparent; /* Fallback color for non-supporting browsers */
+}
+
+.love_clickup {
+  position: absolute;
+  inset-block-end: 0;
+  z-index: 2;
+  padding: 36px 40px 32px;
+  background-image: linear-gradient(
+    206deg,
+    rgba(38, 171, 250, 0.8) -7.06%,
+    rgba(118, 18, 250, 0.8) 52.5%
+  );
+  -webkit-clip-path: path(
+    "M-5.07227 3.54688L415.864 32.7688L415.864 328H-5.07227V3.54688Z"
+  );
+  clip-path: path(
+    "M-5.07227 3.54688L415.864 32.7688L415.864 328H-5.07227V3.54688Z"
+  );
+}
+
+.love_clickup::before {
+  content: "";
+  position: absolute;
+  inset-inline-end: -3px;
+  inset-block-start: 15px;
+  z-index: 3;
+  display: block;
+  inline-size: 102%;
+  block-size: 6px;
+  background-color: #ffffff;
+  transform: rotate(4deg);
+}
+
+.love_clickup::after {
+  content: "";
+  position: absolute;
+  inset-inline-end: -14px;
+  inset-block-start: 21px;
+  z-index: -1;
+  display: block;
+  inline-size: 110%;
+  block-size: 100%;
+  transform: rotate(4deg);
+  -webkit-backdrop-filter: blur(6px);
+  backdrop-filter: blur(6px);
+  will-change: contents;
+}
+
+.footer-bg {
+  background: linear-gradient(
+    49.11deg,
+    #45c4f9 -3.07%,
+    #8920fe 32.89%,
+    #ff0be5 71.58%,
+    #ffc800 101.03%
+  );
+}
+
+.overlap {
+  box-shadow: 0 16px 78px rgba(41, 45, 52, 0.1);
+}
+
+.overlap button {
+  box-shadow: 0 10px 25px rgba(123, 104, 238, 0.5);
+}
+
+.savetime-box1 {
+  background: linear-gradient(154deg, #ff7861 -38.54%, #d613ee 99.56%);
+}
+
+.savetime-box2 {
+  background: linear-gradient(152deg, #eb00ff 6.96%, #5037e7 107.25%);
+}
+
+.savetime-box3 {
+  background: linear-gradient(154deg, #6731ec -38.54%, #50d2ff 99.56%);
+}
+
+.exception-box1{
+  background: linear-gradient(352deg, #5037E7 6.96%, #EB00FF 107.25%);
+}
+
+.exception-box2{
+  background: linear-gradient(352deg, #6731EC 1.65%, #44CFFF 118.4%);
+}
+
+.exception-box3{
+  background: linear-gradient(170deg, #6731EC 1.65%, #44CFFF 118.4%);
+}
+
+.exception-box4{
+  background: linear-gradient(351deg, #5037E7 12.36%, #EB00FF 124.69%);
+}
+
+.exception-box5{
+  background: radial-gradient(101.72% 63.11% at 69.09% 71.59%, #313741 0%, #252A31 100%);
+}
+
+.exception-box6{
+  background: linear-gradient(168deg, #D613EE -55.05%, #FF674E 64.52%);
+}
+
+.exception-box7{
+  background: #0C1947;
+}
