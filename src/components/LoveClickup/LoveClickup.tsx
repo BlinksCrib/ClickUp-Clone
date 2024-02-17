@@ -28,10 +28,10 @@ const LoveClickup = () => {
       <div className="flex justify-center items-center w-full">
         <div className="w-[90%] flex justify-center items-center flex-col my-12">
           <header>
-            <h1 className="testing-gradient font-extrabold text-5xl">
+            <h1 className="testing-gradient font-extrabold lg:text-6xl text-4xl text-center">
               All teams love ClickUp
             </h1>
-            <p className="text-2xl mt-6">
+            <p className="lg:text-2xl text-xl mt-6 text-center">
               <span className="font-bold">
                 Teams love how ClickUp helps them get things done efficiently.
               </span>{" "}
@@ -42,25 +42,27 @@ const LoveClickup = () => {
             </p>
           </header>
 
-          <main className="flex justify-center items-center w-full">
+          <main className="flex justify-center items-center w-full overflow-x-scroll overflow-y-hidden mt-10">
             {team?.map((item, i) => (
               <div
-                className="relative w-[30%] flex justify-center items-center text-[#ffffff]"
+                className="relative w-[380px] h-[580px] flex justify-center items-center text-[#ffffff] mr-[2rem] rounded-lg"
                 key={i}
               >
                 <img
                   src={item.clientImg}
                   alt="client picture"
-                  className="absolute z-[1] w-[100%]"
+                  className="absolute z-[1] w-full h-full object-cover rounded-lg"
                 />
-                <div className="love_clickup absolute z-[2]">
+                <div className="love_clickup absolute z-[2] h-[50%] w-full rounded-br-lg rounded-bl-lg">
                   <small>
                     <item.clientLogo />
                   </small>
-                  <h6>{item.desc}</h6>
-                  <button>
-                    Read story <i className="fa-solid fa-turn-up"></i>
-                  </button>
+                  <h6 className="font-semibold mt-6">{item.desc}</h6>
+                  <div className="flex justify-end items-end ">
+                    <button className="w-full bg-[rgba(255,255,255,0.1)] mt-8 py-2 rounded-lg">
+                      Read story <i className="fa-solid fa-turn-up ml-2"></i>
+                    </button>
+                  </div>
                 </div>
               </div>
             ))}

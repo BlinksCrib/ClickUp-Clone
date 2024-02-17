@@ -33,7 +33,7 @@ const SaveTime = () => {
   return (
     <div>
       <div className="mt-[6rem] flex justify-center items-center flex-col text-center">
-        <h1 className="text-6xl lg:w-[40%] w-[90%] font-extrabold testing-gradient">
+        <h1 className="lg:text-6xl text-4xl lg:w-[40%] w-[90%] font-extrabold testing-gradient">
           Save time and get more done
         </h1>
         <p className="text-xl lg:w-[33%] w-[80%] font-semibold mt-6">
@@ -88,7 +88,7 @@ const SaveTime = () => {
       {/* desktop mode */}
 
       {/* mobile mode */}
-      <main className="lg:hidden flex items-center overflow-x-scroll w-full">
+      <main className="lg:hidden flex items-center overflow-x-scroll w-full mt-8">
         {/* box */}
         {timesMobile?.map((item, i) => (
           <div

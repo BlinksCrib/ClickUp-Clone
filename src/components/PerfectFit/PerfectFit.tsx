@@ -100,7 +100,7 @@ const PerfectFit = () => {
       <div className="flex justify-center items-center w-full">
         <div className="flex justify-center items-center w-[90%] flex-col mt-[6rem]">
           <div className="flex justify-center items-center flex-col mb-20">
-            <h1 className="font-extrabold text-6xl testing-gradient">
+            <h1 className="font-extrabold lg:text-6xl text-4xl text-center testing-gradient">
               Perfect fit for every team
             </h1>
             <p className="text-center mt-6">

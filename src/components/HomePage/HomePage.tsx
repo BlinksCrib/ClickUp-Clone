@@ -8,7 +8,7 @@ const HomePage = () => {
           <div className="bg-black rounded-full py-1 px-3 text-white mb-3">
             <p>Discover the all-new ClickUp 3.0</p>
           </div>
-          <h1 className="md:text-7xl text-5xl font-bold testing-gradient color-[#24223e]">
+          <h1 className="lg:text-7xl text-4xl font-bold testing-gradient color-[#24223e]">
             One app to replace them all
           </h1>
           <div className="py-6">

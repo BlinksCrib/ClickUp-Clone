@@ -23,7 +23,7 @@ const ProjectWeCan = () => {
     { icon: "", name: "Projects" },
   ];
 
-  const handleClick = (i: any, item: { icon: string; name: string }) => {
+  const handleClick = (item: { icon: string; name: string }) => {
     setProject(item.name);
     // const container = containerRef.current;
     // if (container) {
@@ -65,7 +65,7 @@ const ProjectWeCan = () => {
           //   console.log(item);
           <div
             key={i}
-            onClick={() => handleClick(i, item)}
+            onClick={() => handleClick(item)}
             className="flex justify-center items-center"
           >
             <h1>{item.name}</h1>

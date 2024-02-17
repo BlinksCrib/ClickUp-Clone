@@ -164,3 +164,7 @@
 .exception-box7{
   background: #0C1947;
 }
+
+.exception-box7 button{
+  background: linear-gradient(90deg,rgba(82,99,160,.13) 4.25%,rgba(82,99,160,.06) 94.43%);
+}
