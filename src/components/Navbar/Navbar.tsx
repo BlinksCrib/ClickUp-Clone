@@ -37,13 +37,13 @@ const Navbar = () => {
       className={`
         ${
           nav
-            ? " bg-[#ffffff] h-[70px] py-[10.5px] w-full fixed z-[10] flex justify-center-items-center"
+            ? "bg-[#ffffff] h-[70px] py-[10.5px] w-full fixed z-[10] flex justify-center-items-center"
             : "bg-[#ffffff] h-[70px] py-[10.5px] w-full fixed z-[10] mb-[5rem] flex justify-center items-center"
         } ${isVisible ? "header-shadow" : ""}`}
     >
       <nav className="flex justify-between h-full w-[95%] items-center">
         <aside className="flex justify-center items-center">
-          <Link to="/" className="mr-6">
+          <Link to="/" className="md:mr-6">
             <Logo />
           </Link>
           <div>
@@ -56,15 +56,21 @@ const Navbar = () => {
         </aside>
 
         <aside className="flex justify-center items-center">
-          <button className="py-2 px-6 font-bold lg:block hidden">Contact sales</button>
-          <button className="mx-6 bg-[rgb(123,104,238)] px-6 py-2 rounded-lg font-bold text-[#ffffff]">Sign Up</button>
-          <button className="bg-[rgba(233,235,240)] px-6 py-2 rounded-lg font-bold md:block hidden">Log In</button>
+          <button className="py-2 px-6 font-bold lg:block hidden hover:text-[rgb(123,104,238)] ease-out duration-700">
+            Contact sales
+          </button>
+          <button className="mx-6 bg-[rgb(123,104,238)] px-6 py-2 rounded-lg font-bold text-[#ffffff] md:block hidden">
+            Sign Up
+          </button>
+          <button className="bg-[rgba(233,235,240)] hover:bg-[transparent] hover:text-[rgb(123,104,238)] px-6 py-2 rounded-lg font-bold md:block hidden ease-out duration-700">
+            Log In
+          </button>
         </aside>
 
         <button className="lg:hidden cursor-pointer " onClick={handClick}>
           {nav ? (
             <i className="fa-solid fa-x"></i>
-            ) : (
+          ) : (
             <i className="fa-solid fa-bars"></i>
           )}
         </button>

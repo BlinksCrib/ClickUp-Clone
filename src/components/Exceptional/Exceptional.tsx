@@ -75,7 +75,7 @@ const Exceptional = () => {
           <section className="w-[95%]">
             <div>
               {/* bottom section box */}
-              <main className="grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-6 justify-center items-center w-full lg:flex-row flex-col mt-10">
+              <main className="grid lg:grid-cols-3 grid-cols-1 gap-6 justify-center items-center w-full lg:flex-row flex-col mt-10 lg:mb-[3rem] mb-[7rem]">
                 <div className="exception-box1 sm:h-[380px] h-[420px] text-[#ffffff] rounded-lg">
                   <div className="z-10 flex justify-center items-center h-[30%]">
                     <aside className="w-[90%]">
@@ -151,21 +151,22 @@ const Exceptional = () => {
                     ))}
                   </div>
                 </div>
-                <div className="lg:col-span-2 exception-box4 sm:h-[380px] h-[420px] rounded-lg text-[#ffffff]">
+                <div className="lg:col-span-2 md:block hidden exception-box4 sm:h-[380px] h-[420px] rounded-lg text-[#ffffff]">
                   <main className="flex justify-center items-center h-full">
-                    <aside className="w-2/5 h-full z-[3]">
+                    <aside className="w-[45%] h-full flex justify-center items-center">
                      <div className="w-[80%]">
-                     <h1>Plays well with others</h1>
+                     <h1 className="text-2xl font-bold mb-2">Plays well with others</h1>
                       <p>Easily integrates with the tools you already use.</p>
                       <img src={integration} alt="clickup intergation" className="w-full" />
                      </div>
                     </aside>
-                    <aside className="or w-[40%] h-full bg-cente bg-cover bg-no-repeat z-[1]">
+                    <aside className=" w-[10%] h-full text-center flex justify-center items-center">
+                        <h4 className="font-bold bg-[#A650FD] w-10 h-10 px-2 py-2 rounded-full text-[#ffffff]">or</h4>
                     </aside>
-                    <aside className="w-2/5 h-full">
+                    <aside className="w-[45%] h-full flex justify-center items-center">
                       <div className="w-[80%]">
-                        <h1>Plays well with others</h1>
-                        <p>Easily integrates with the tools you already use.</p>
+                        <h1 className="text-2xl font-bold mb-2">Replaces them entirely</h1>
+                        <p>Eliminate app sprawl and reduce software spend.</p>
                         <img
                           src={integrationReplace}
                           alt="clickup integration replace"
@@ -214,7 +215,7 @@ const Exceptional = () => {
                     />
                   </div>
                 </div>
-                <div className="exception-box7 lg:col-span-2 text-[#ffffff] relative sm:h-[380px] h-[420px] rounded-lg lg:mb-0 mb-[5rem]">
+                <div className="exception-box7 md:block hidden lg:col-span-2 text-[#ffffff] relative sm:h-[380px] h-[420px] rounded-lg">
                   <div className="flex justify-center items-center">
                     <aside className="w-[90%]">
                       <h1 className="sm:text-2xl text-lg font-bold mt-4 mb-8">

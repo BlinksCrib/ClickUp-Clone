@@ -11,6 +11,12 @@ import docs from "../../assets/docs.png";
 import docsSm from "../../assets/docs-sm.png";
 import timetracking from "../../assets/timetracking.png";
 import timetrackingSm from "../../assets/timetracking-sm.png";
+import chat from "../../assets/chat.png";
+import chatSm from "../../assets/chat-sm.png";
+import whiteboard from "../../assets/whiteboard.png";
+import whiteboardSm from "../../assets/whiteboard-sm.png";
+import projects from "../../assets/projects.png";
+import projectsSm from "../../assets/projects-sm.png";
 
 import {
   Project1,
@@ -70,11 +76,10 @@ const ProjectWeCan = () => {
   return (
     <div>
       <div
-        className="flex justify-center items-center mt-[4rem]"
+        className="flex w-full lg:justify-center justify-start items-center mt-[4rem] lg:mx-0 px-6"
         style={{
           overflowX: "auto",
           whiteSpace: "nowrap",
-          width: "100%",
           textAlign: "center",
         }}
       >
@@ -84,7 +89,7 @@ const ProjectWeCan = () => {
           <div
             key={i}
             onClick={() => handleClick(item)}
-            className="flex justify-center items-center flex-col mr-10"
+            className="flex justify-center items-center flex-col mr-10 cursor-pointer"
             // style={{ transform: `translateX(${(activeIndex - i) * 100}%)` }}
           >
             <aside
@@ -117,7 +122,7 @@ const ProjectWeCan = () => {
               alt={project}
               className="w-[40%] absolute bottom-0 right-0"
             />
-            <img src={dashboards} alt={project} />
+            <img src={dashboards} alt={project} className="w-full" />
           </div>
         ) : project === "AI" ? (
           <div className="w-[95%] flex justify-center items-center relative">
@@ -126,7 +131,7 @@ const ProjectWeCan = () => {
               alt={project}
               className="w-[40%] absolute bottom-0 right-0"
             />
-            <img src={ai} alt={project} />
+            <img src={ai} alt={project} className="w-full" />
           </div>
         ) : project === "Forms" ? (
           <div className="w-[95%] flex justify-center items-center relative">
@@ -135,7 +140,7 @@ const ProjectWeCan = () => {
               alt={project}
               className="w-[50%] absolute bottom-[-10%] right-0"
             />
-            <img src={forms} alt={project} />
+            <img src={forms} alt={project} className="w-full" />
           </div>
         ) : project === "Sprints" ? (
           <div className="w-[95%] flex justify-center items-center relative">
@@ -144,7 +149,7 @@ const ProjectWeCan = () => {
               alt={project}
               className="w-[50%] absolute bottom-[-10%] right-0"
             />
-            <img src={sprints} alt={project} />
+            <img src={sprints} alt={project} className="w-full" />
           </div>
         ) : project === "Docs" ? (
           <div className="w-[95%] flex justify-center items-center relative">
@@ -153,43 +158,43 @@ const ProjectWeCan = () => {
               alt={project}
               className="w-[50%] absolute bottom-[-10%] right-0"
             />
-            <img src={docs} alt={project} />
+            <img src={docs} alt={project} className="w-full" />
           </div>
-        ) : project === "Time tracking" ? (
+        ) : project === "Time-tracking" ? (
           <div className="w-[95%] flex justify-center items-center relative">
             <img
               src={timetrackingSm}
               alt={project}
               className="w-[50%] absolute bottom-[-10%] right-0"
             />
-            <img src={timetracking} alt={project} />
+            <img src={timetracking} alt={project} className="w-full" />
           </div>
         ) : project === "Chat" ? (
           <div className="w-[95%] flex justify-center items-center relative">
             <img
-              src={formsSm}
+              src={chatSm}
               alt={project}
               className="w-[50%] absolute bottom-[-10%] right-0"
             />
-            <img src={forms} alt={project} />
+            <img src={chat} alt={project} className="w-full" />
           </div>
         ) : project === "Whiteboards" ? (
           <div className="w-[95%] flex justify-center items-center relative">
             <img
-              src={formsSm}
+              src={whiteboardSm}
               alt={project}
               className="w-[50%] absolute bottom-[-10%] right-0"
             />
-            <img src={forms} alt={project} />
+            <img src={whiteboard} alt={project} className="w-full" />
           </div>
         ) : (
           <div className="w-[95%] flex justify-center items-center relative">
             <img
-              src={formsSm}
+              src={projectsSm}
               alt={project}
               className="w-[50%] absolute bottom-[-10%] right-0"
             />
-            <img src={forms} alt={project} />
+            <img src={projects} alt={project} className="w-full" />
           </div>
         )}
       </div>

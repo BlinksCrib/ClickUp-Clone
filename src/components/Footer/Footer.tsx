@@ -106,17 +106,17 @@ const Footer = () => {
       <div className="flex justify-center items-center w-full footer-bg rounded-tr-[4rem] rounded-tl-[10rem] mt-[10rem]">
         <div className="flex justify-center items-center w-[90%] flex-col relative">
           {/* first box overlapping */}
-          <section className="bg-[#ffffff] absolute top-[-10%] rounded-lg w-full flex justify-center items-center py-[3rem] overlap">
+          <section className="bg-[#ffffff] absolute md:top-[-10%] top-[-8%] rounded-lg w-full flex justify-center items-center md:py-[3rem] py-[2rem] overlap">
             <img
               src={logo}
               alt="clickup"
-              className="absolute left-[0%] top-0 bg-cover overflow-y-hidden w-[8%]"
+              className="absolute lg:left-[0%] right-0 lg:top-0 bottom-0 bg-cover overflow-y-hidden w-[8%]"
             />
 
-            <div className="border w-[80%] flex justify-between items-center">
-              <div className="">
+            <div className="w-[80%] flex lg:justify-between justify-start lg:items-center items-start lg:flex-row flex-col">
+              <div className="w-full lg:mb-0 mb-1">
                 <div>
-                  <h1 className="font-extrabold text-5xl text-[rgb(51,51,51)]">
+                  <h1 className="font-extrabold lg:text-5xl md:text-3xl text-2xl text-[rgb(51,51,51)]">
                     One app to replace them all.
                   </h1>
                   <p className="text-[rgb(41,45,52)]">
@@ -125,7 +125,7 @@ const Footer = () => {
                   </p>
                 </div>
               </div>
-              <div>
+              <div className="w-full lg:mt-0 mt-6">
                 <button className="bg-[rgb(123,104,238)] text-[#ffffff] font-bold rounded-md py-3 px-6">
                   Free Forever
                 </button>
@@ -200,7 +200,7 @@ const Footer = () => {
           <section className="flex md:justify-between justify-center items-center md:flex-row flex-col my-8 w-full">
             <div className="flex md:justify-start justify-center items-center md:items-start flex-col">
               <Logo />
-              <p className="text-[#ffffff] font-medium md:my-0 my-3">
+              <p className="text-[#ffffff] font-medium md:my-0 my-3 lg:text-start text-center">
                 &copy; {year} | Security | Your Privacy | Terms
               </p>
             </div>

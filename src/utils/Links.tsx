@@ -20,9 +20,9 @@ const Links: React.FC<LinksProps> = ({ handClose }) => {
   return (
     <section>
       <div>
-        <ul className="flex justify-center items-center space-x-6">
+        <ul className="flex justify-center items-center lg:flex-row flex-col lg:space-x-6 lg:space-y-0 space-y-8 overflow-x-hidden">
           {link?.map((item, i) => (
-            <li className="cursor-pointer flex justify-center items-center hover:text-[rgb(123,104,238)] active:text-[rgb(123,104,238)] focus:text-[rgb(123,104,238)]focus:underline focus:underline-offset-2 focus:decoration-2 font-semibold" key={i} onClick={handClose}>
+            <li className="cursor-pointer flex justify-center items-center hover:text-[rgb(123,104,238)] active:text-[rgb(123,104,238)] focus:text-[rgb(123,104,238)] focus:underline focus:underline-offset-2 focus:decoration-2 font-semibold ease-out duration-700" key={i} onClick={handClose}>
               <Link
                 to="/"
                 className=""
