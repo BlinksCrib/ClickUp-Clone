@@ -22,6 +22,7 @@ export default {
         md: '768px',
         lg: '992px',
         xl: '1200px',
+        nm: "1100",
         '2xl': '1400px',
       },
       fontFamily: {

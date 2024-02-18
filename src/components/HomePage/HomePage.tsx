@@ -19,7 +19,7 @@ const HomePage = () => {
               designed to manage any type of work.
             </h6>
           </div>
-          <button className="btn home-btn text-white sm:px-16 px-10 py-4 rounded-lg font-bold md:text-2xl text-lg">
+          <button className="btn home-btn text-white sm:px-16 px-8 py-4 rounded-lg font-bold md:text-2xl text-lg">
             Get Started. It's FREE <i className="fa-solid fa-arrow-right ml-3"></i>
           </button>
           <div className="flex justify-center items-center mt-6 lg:flex-row flex-col">

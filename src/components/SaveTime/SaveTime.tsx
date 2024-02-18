@@ -50,10 +50,10 @@ const SaveTime = () => {
   return (
     <div>
       <div className="mt-[6rem] flex justify-center items-center flex-col text-center">
-        <h1 className="lg:text-6xl text-4xl lg:w-[40%] w-[90%] font-extrabold testing-gradient">
+        <h1 className="lg:text-6xl text-4xl lg:w-[45%] md:w-[60%] w-[90%] font-extrabold testing-gradient">
           Save time and get more done
         </h1>
-        <p className="text-xl lg:w-[33%] w-[80%] font-semibold mt-6">
+        <p className="text-xl lg:w-[38%] md:w-[45%] w-[80%] font-semibold mt-6">
           Supercharge productivity. Streamline work by doing it, and seeing it,
           in one place.
         </p>
@@ -184,7 +184,7 @@ const SaveTime = () => {
       {/* desktop mode */}
 
       {/* mobile mode */}
-      <main className="lg:hidden flex items-center overflow-x-scroll w-full mt-8">
+      <main className="lg:hidden flex items-center overflow-x-scroll w-full mt-8 pb-4">
         {/* box */}
         {timesMobile?.map((item, i) => (
           <div
@@ -192,7 +192,7 @@ const SaveTime = () => {
             key={i}
           >
             <div
-              className={`${item?.style} h-[520px] rounded-lg w-[340px] px-[2rem] py-[2.5rem] mr-[2rem] flex justify-start items-start flex-col`}
+              className={`${item?.style} h-[520px] rounded-lg sm:w-[340px] w-[300px] px-[2rem] py-[2.5rem] mr-[2rem] flex justify-start items-start flex-col`}
             >
               <h1 className="text-[#ffffff] font-bold text-2xl mb-6">
                 {item?.heading}

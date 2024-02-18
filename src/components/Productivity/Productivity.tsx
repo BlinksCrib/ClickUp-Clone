@@ -9,7 +9,7 @@ const Productivity = () => {
                     <h4 className="font-bold">95% of users increased their productivity after switching to ClickUp.</h4>
                     <button className="ml-4 bg-[#ffffff] px-5 py-1 border border-[#ceceea] rounded-md font-bold">Join them</button>
                 </div>
-                <img src={productivity} alt="" />
+                <img src={productivity} alt="" className="" />
             </div>
         </div>
     </div>

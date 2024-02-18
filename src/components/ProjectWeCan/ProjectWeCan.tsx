@@ -76,7 +76,7 @@ const ProjectWeCan = () => {
   return (
     <div>
       <div
-        className="flex w-full lg:justify-center justify-start items-center mt-[4rem] lg:mx-0 px-6"
+        className="flex w-full lg:justify-center justify-start items-center mt-[4rem]"
         style={{
           overflowX: "auto",
           whiteSpace: "nowrap",
@@ -89,7 +89,7 @@ const ProjectWeCan = () => {
           <div
             key={i}
             onClick={() => handleClick(item)}
-            className="flex justify-center items-center flex-col mr-10 cursor-pointer"
+            className="flex justify-center items-center flex-col mr-10 cursor-pointer first:ml-12"
             // style={{ transform: `translateX(${(activeIndex - i) * 100}%)` }}
           >
             <aside

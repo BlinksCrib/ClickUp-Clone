@@ -23,7 +23,7 @@ const WorkedWith = () => {
               Join them
             </button>
           </div>
-          <div className="flex justify-between items-center lg:w-full w-[100%] overflow-y-scroll slide-scroll lg:mb-0 mb-4">
+          <div className="flex justify-between items-center lg:w-full w-[100%] overflow-y-scroll slide-scroll lg:pb-0 pb-4 lg:mb-0 mb-4">
             <small className="mr-6 ml-6">
               <Fortinet />
             </small>

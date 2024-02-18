@@ -119,7 +119,7 @@ const PerfectFit = () => {
             {team?.map((item: any, i) => (
               <div
                 key={i}
-                className="flex justify-center items-center flex-col py-8 px-6 cursor-pointer bg-white border border-[#ececfc] rounded-md w-[10rem] h-[7rem] text-[#514b81]"
+                className="flex justify-center items-center flex-col py-8 md:px-6 px-4 cursor-pointer bg-white border border-[#ececfc] rounded-md nm:w-[10rem] lg:w-[8rem] h-[7rem] text-[#514b81]"
                 onClick={() => setFits(item.name)}
               >
                 <small>
@@ -155,13 +155,13 @@ const PerfectFit = () => {
           {/* desktop view */}
 
           {/* mobile view */}
-          <main className="lg:hidden flex items-center overflow-x-scroll w-full">
+          <main className="lg:hidden flex items-center overflow-x-scroll w-full pb-4">
             {fitMobile?.map((item, i) => (
               <div
                 className="flex justify-center items-center first:ml-[1rem]"
                 key={i}
               >
-                <div className=" w-[340px] h-[520px] flex justify-start items-start flex-col bg-[#ffffff] border border-[#ceceea] rounded-lg py-10 px-[2rem] mr-[2rem]">
+                <div className=" w-[300px] h-[520px] flex justify-start items-start flex-col bg-[#ffffff] border border-[#ceceea] rounded-lg py-10 px-[2rem] mr-[2rem]">
                   <div className="flex justify-center items-center mt-2">
                     <small>
                       <item.icon />

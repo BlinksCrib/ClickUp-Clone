@@ -42,7 +42,7 @@ const LoveClickup = () => {
             </p>
           </header>
 
-          <main className="flex justify-start items-start w-full overflow-x-scroll overflow-y-hidden mt-10">
+          <main className="flex justify-start items-start w-full overflow-x-scroll overflow-y-hidden mt-10 pb-4">
             {team?.map((item, i) => (
               <div
                 className="flex justify-center items-center lg:first:ml-0 first:ml-[1rem] w-full"

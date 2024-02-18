@@ -55,11 +55,12 @@ const Navbar = () => {
           </div>
         </aside>
 
+        <div className="flex justify-center items-center">
         <aside className="flex justify-center items-center">
           <button className="py-2 px-6 font-bold lg:block hidden hover:text-[rgb(123,104,238)] ease-out duration-700">
             Contact sales
           </button>
-          <button className="mx-6 bg-[rgb(123,104,238)] px-6 py-2 rounded-lg font-bold text-[#ffffff] md:block hidden">
+          <button className="md:mx-6 mx-3 bg-[rgb(123,104,238)] sm:px-6 px-2 py-2 rounded-lg font-bold text-[#ffffff] ">
             Sign Up
           </button>
           <button className="bg-[rgba(233,235,240)] hover:bg-[transparent] hover:text-[rgb(123,104,238)] px-6 py-2 rounded-lg font-bold md:block hidden ease-out duration-700">
@@ -67,13 +68,14 @@ const Navbar = () => {
           </button>
         </aside>
 
-        <button className="lg:hidden cursor-pointer " onClick={handClick}>
+        <button className="lg:hidden cursor-pointer ml-4" onClick={handClick}>
           {nav ? (
             <i className="fa-solid fa-x"></i>
           ) : (
             <i className="fa-solid fa-bars"></i>
           )}
         </button>
+        </div>
       </nav>
 
       {/* mobile view */}
@@ -82,7 +84,7 @@ const Navbar = () => {
         className={
           nav
             ? "lg:hidden fixed left-0 bg-[#ffffff] mt-[4rem]  w-full h-full ease-in duration-500"
-            : "fixed left-[-100%] h-screen  ease-out duration-700"
+            : "fixed left-[-100%] h-screen mt-[4rem]  ease-out duration-700"
         }
       >
         <ul className="text-center space-y-10 py-10">

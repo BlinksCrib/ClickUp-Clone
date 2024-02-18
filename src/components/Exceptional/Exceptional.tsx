@@ -75,7 +75,7 @@ const Exceptional = () => {
           <section className="w-[95%]">
             <div>
               {/* bottom section box */}
-              <main className="grid lg:grid-cols-3 grid-cols-1 gap-6 justify-center items-center w-full lg:flex-row flex-col mt-10 lg:mb-[3rem] mb-[7rem]">
+              <main className="grid lg:grid-cols-3 grid-cols-1 lg:gap-6 gap-8 justify-center items-center w-full lg:flex-row flex-col mt-10 lg:mb-[3rem] mb-[7rem]">
                 <div className="exception-box1 sm:h-[380px] h-[420px] text-[#ffffff] rounded-lg">
                   <div className="z-10 flex justify-center items-center h-[30%]">
                     <aside className="w-[90%]">
