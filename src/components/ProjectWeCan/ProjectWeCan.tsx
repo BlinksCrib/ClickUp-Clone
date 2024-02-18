@@ -1,30 +1,49 @@
-import { useRef, useState } from "react";
+import { useState } from "react";
 import dashboards from "../../assets/dashboards.png";
 import dashboardsSm from "../../assets/dashboards-sm.png";
 import ai from "../../assets/ai.png";
 import aiSm from "../../assets/ai-sm.png";
 import forms from "../../assets/forms.png";
 import formsSm from "../../assets/forms-sm.png";
+import sprints from "../../assets/sprints.png";
+import sprintsSm from "../../assets/sprints-sm.png";
+import docs from "../../assets/docs.png";
+import docsSm from "../../assets/docs-sm.png";
+import timetracking from "../../assets/timetracking.png";
+import timetrackingSm from "../../assets/timetracking-sm.png";
+
+import {
+  Project1,
+  Project2,
+  Project3,
+  Project4,
+  Project5,
+  Project6,
+  Project7,
+  Project8,
+  Project9,
+} from "../../utils/Icons";
 // import dashboardsSm from "../../assets/dashboards-sm.png";
 
 const ProjectWeCan = () => {
   const [project, setProject] = useState("Dashboards");
-  const containerRef = useRef<HTMLDivElement>(null);
+  // const [activeIndex, setActiveIndex] = useState(-1);
 
   const theProject = [
-    { icon: "", name: "Dashboards" },
-    { icon: "", name: "AI" },
-    { icon: "", name: "Forms" },
-    { icon: "", name: "Sprints" },
-    { icon: "", name: "Docs" },
-    { icon: "", name: "Time-tracking" },
-    { icon: "", name: "Chat" },
-    { icon: "", name: "Whiteboards" },
-    { icon: "", name: "Projects" },
+    { icon: Project2, name: "Dashboards" },
+    { icon: Project3, name: "AI" },
+    { icon: Project4, name: "Forms" },
+    { icon: Project5, name: "Sprints" },
+    { icon: Project6, name: "Docs" },
+    { icon: Project7, name: "Time-tracking" },
+    { icon: Project8, name: "Chat" },
+    { icon: Project9, name: "Whiteboards" },
+    { icon: Project1, name: "Projects" },
   ];
 
-  const handleClick = (item: { icon: string; name: string }) => {
+  const handleClick = (item: { icon: any; name: string }) => {
     setProject(item.name);
+    // setActiveIndex(i)
     // const container = containerRef.current;
     // if (container) {
     //   const item = container.children[i];
@@ -51,8 +70,7 @@ const ProjectWeCan = () => {
   return (
     <div>
       <div
-        className="flex justify-center items-center"
-        ref={containerRef}
+        className="flex justify-center items-center mt-[4rem]"
         style={{
           overflowX: "auto",
           whiteSpace: "nowrap",
@@ -66,9 +84,27 @@ const ProjectWeCan = () => {
           <div
             key={i}
             onClick={() => handleClick(item)}
-            className="flex justify-center items-center"
+            className="flex justify-center items-center flex-col mr-10"
+            // style={{ transform: `translateX(${(activeIndex - i) * 100}%)` }}
           >
-            <h1>{item.name}</h1>
+            <aside
+              className={`rounded-lg px-3 py-3 h-[4rem] w-[4rem] flex justify-center items-center ${
+                project === item.name
+                  ? "bg-[linear-gradient(130deg,#24223e,#282642)]"
+                  : ""
+              }`}
+            >
+              <item.icon project={project} name={item.name} />
+            </aside>
+            <h1
+              className={` ${
+                project === item.name
+                  ? "text-[#24223e] font-bold"
+                  : "text-[#7F76B3] font-semibold"
+              }`}
+            >
+              {item.name}
+            </h1>
           </div>
         ))}
       </div>
@@ -104,29 +140,29 @@ const ProjectWeCan = () => {
         ) : project === "Sprints" ? (
           <div className="w-[95%] flex justify-center items-center relative">
             <img
-              src={formsSm}
+              src={sprintsSm}
               alt={project}
               className="w-[50%] absolute bottom-[-10%] right-0"
             />
-            <img src={forms} alt={project} />
+            <img src={sprints} alt={project} />
           </div>
         ) : project === "Docs" ? (
           <div className="w-[95%] flex justify-center items-center relative">
             <img
-              src={formsSm}
+              src={docsSm}
               alt={project}
               className="w-[50%] absolute bottom-[-10%] right-0"
             />
-            <img src={forms} alt={project} />
+            <img src={docs} alt={project} />
           </div>
         ) : project === "Time tracking" ? (
           <div className="w-[95%] flex justify-center items-center relative">
             <img
-              src={formsSm}
+              src={timetrackingSm}
               alt={project}
               className="w-[50%] absolute bottom-[-10%] right-0"
             />
-            <img src={forms} alt={project} />
+            <img src={timetracking} alt={project} />
           </div>
         ) : project === "Chat" ? (
           <div className="w-[95%] flex justify-center items-center relative">

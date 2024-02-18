@@ -1,6 +1,15 @@
-import logo from "../../assets/logo.svg"
+import logo from "../../assets/logo.svg";
+import apple from "../../assets/app-store-badge-white.png";
+import google from "../../assets/google-play-badge-white.png";
+import uptime from "../../assets/uptime_badge-white.svg";
+import security from "../../assets/security_badge-white.svg";
+import support from "../../assets/support_badge-white.svg";
+
+import { Logo } from "../../utils/Icons";
 
 const Footer = () => {
+  const year = new Date().getFullYear();
+
   const footerLinks = [
     {
       name: "CLICKUP",
@@ -74,33 +83,75 @@ const Footer = () => {
     },
   ];
 
+  const reel = [
+    {
+      bold: "Free training",
+      normal: "& 24-hours support",
+      icon: support,
+    },
+    {
+      bold: "security & privacy",
+      normal: "Serious about",
+      icon: security,
+    },
+    {
+      bold: "Highest levels of uptime",
+      normal: "the last 12 months",
+      icon: uptime,
+    },
+  ];
+
   return (
     <div>
       <div className="flex justify-center items-center w-full footer-bg rounded-tr-[4rem] rounded-tl-[10rem] mt-[10rem]">
         <div className="flex justify-center items-center w-[90%] flex-col relative">
           {/* first box overlapping */}
           <section className="bg-[#ffffff] absolute top-[-10%] rounded-lg w-full flex justify-center items-center py-[3rem] overlap">
-          <img src={logo} alt="clickup" className="absolute left-[0%] top-0 bg-cover overflow-y-hidden w-[8%]"/>
+            <img
+              src={logo}
+              alt="clickup"
+              className="absolute left-[0%] top-0 bg-cover overflow-y-hidden w-[8%]"
+            />
 
             <div className="border w-[80%] flex justify-between items-center">
-            <div className="">
-              <div>
-                <h1 className="font-extrabold text-5xl text-[rgb(51,51,51)]">One app to replace them all.</h1>
-                <p className="text-[rgb(41,45,52)]">
-                  All of your work in one place: Tasks, Docs, Chat, Goals, &
-                  more.
-                </p>
+              <div className="">
+                <div>
+                  <h1 className="font-extrabold text-5xl text-[rgb(51,51,51)]">
+                    One app to replace them all.
+                  </h1>
+                  <p className="text-[rgb(41,45,52)]">
+                    All of your work in one place: Tasks, Docs, Chat, Goals, &
+                    more.
+                  </p>
+                </div>
               </div>
-            </div>
-            <div>
-              <button className="bg-[rgb(123,104,238)] text-[#ffffff] font-bold rounded-md py-3 px-6" >Free Forever</button>
-            </div>
+              <div>
+                <button className="bg-[rgb(123,104,238)] text-[#ffffff] font-bold rounded-md py-3 px-6">
+                  Free Forever
+                </button>
+              </div>
             </div>
           </section>
           {/* first box overlapping */}
 
           {/* first footer section */}
-          <section className="mt-[10rem]">{}</section>
+          <section className="mt-[8rem] mb-[2rem] grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 lg:justify-between justify-center md:items-center items-start w-full">
+            {reel?.map((item, i) => (
+              <div className="flex lg:justify-center justify-start items-center lg:mb-0 mb-4" key={i}>
+                <img src={item.icon} alt="reel icon" />
+                {item.bold === "security & privacy" ? (
+                  <p className="text-[#ffffff] ml-4">
+                     {item.normal} 
+                    <b> {item.bold}</b>
+                  </p>
+                ) : (
+                  <p className="text-[#ffffff] ml-4">
+                    <b>{item.bold}</b> {item.normal}
+                  </p>
+                )}
+              </div>
+            ))}
+          </section>
           {/* first footer section */}
 
           {/* second footer section */}
@@ -111,8 +162,10 @@ const Footer = () => {
                   <div className="">
                     <h1 className="font-bold mb-4">{footer.name}</h1>
                     <ul>
-                      {footer.links?.map((link,i) => (
-                        <li className="mb-4 cursor-pointer" key={i}>{link.name}</li>
+                      {footer.links?.map((link, i) => (
+                        <li className="mb-4 cursor-pointer" key={i}>
+                          {link.name}
+                        </li>
                       ))}
                     </ul>
                   </div>
@@ -129,21 +182,13 @@ const Footer = () => {
                 <li className="mb-4 cursor-pointer">Podcast</li>
               </ul>
               <div className="mt-[7rem]">
-                <hr className="w-[80%] mb-6" />
-                <div className="flex justify-center items-center flex-col">
-                  <button>
-                    <img src="" alt="" />
-                    <small className="flex justify-center items-start flex-col">
-                      <p>Download on the</p>
-                      <h6>App Store</h6>
-                    </small>
+                <hr className="md:w-[80%] w-full mb-6" />
+                <div className="flex justify-center items-start flex-col">
+                  <button className="lg:w-[80%] w-full rounded-lg">
+                    <img src={apple} alt="apple logo" />
                   </button>
-                  <button>
-                    <img src="" alt="" />
-                    <small className="flex justify-center items-start flex-col">
-                      <p>GET IT ON</p>
-                      <h6>Google Play</h6>
-                    </small>
+                  <button className="lg:w-[80%] w-full rounded-lg mt-3">
+                    <img src={google} alt="google logo" />
                   </button>
                 </div>
               </div>
@@ -152,9 +197,29 @@ const Footer = () => {
           {/* second footer section */}
 
           {/* last footer section */}
-          <section className="flex md:justify-between justify-center items-center my-6">
-            <div></div>
-            <div></div>
+          <section className="flex md:justify-between justify-center items-center md:flex-row flex-col my-8 w-full">
+            <div className="flex md:justify-start justify-center items-center md:items-start flex-col">
+              <Logo />
+              <p className="text-[#ffffff] font-medium md:my-0 my-3">
+                &copy; {year} | Security | Your Privacy | Terms
+              </p>
+            </div>
+            <div>
+              <ul className="flex justify-center items-center">
+                <li>
+                  <i className="fa-brands fa-linkedin text-[#ffffff] mr-2 text-3xl"></i>
+                </li>
+                <li>
+                  <i className="fa-brands fa-square-facebook text-[#ffffff] mr-2 text-3xl"></i>
+                </li>
+                <li>
+                  <i className="fa-brands fa-instagram text-[#ffffff] mr-2 text-3xl"></i>
+                </li>
+                <li>
+                  <i className="fa-brands fa-x-twitter text-[#ffffff] text-3xl"></i>
+                </li>
+              </ul>
+            </div>
           </section>
           {/* last footer section */}
         </div>

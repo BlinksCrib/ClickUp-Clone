@@ -4,6 +4,10 @@
   box-sizing: border-box;
 }
 
+.header-shadow {
+  box-shadow: 0 10px 25px rgba(16, 30, 54, 0.1);
+}
+
 .home-btn {
   background: linear-gradient(56deg, #45c4f9, #7d09ff 50.33%, #ff0be5);
 }
@@ -22,14 +26,22 @@
   }
 }
 
+.team-together {
+  background: url(./assets/cta-bg.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  /* z-index: -20; */
+}
+
 .team-together_cont::before {
   content: "";
   position: absolute;
   inset-inline-start: 50%;
   inset-block-start: 50%;
   z-index: -1;
-  /* inline-size: 766px;
-  block-size: 766px; */
+  inline-size: 766px;
+  block-size: 766px;
   background-image: url(./assets/home-callour-circle-gradient.svg);
   background-size: cover;
   transform: translate(-50%, -50%);
@@ -137,34 +149,84 @@
   background: linear-gradient(154deg, #6731ec -38.54%, #50d2ff 99.56%);
 }
 
-.exception-box1{
-  background: linear-gradient(352deg, #5037E7 6.96%, #EB00FF 107.25%);
+.exception-box1 {
+  background: linear-gradient(352deg, #5037e7 6.96%, #eb00ff 107.25%);
 }
 
-.exception-box2{
-  background: linear-gradient(352deg, #6731EC 1.65%, #44CFFF 118.4%);
+.exception-box2 {
+  background: linear-gradient(352deg, #6731ec 1.65%, #44cfff 118.4%);
 }
 
-.exception-box3{
-  background: linear-gradient(170deg, #6731EC 1.65%, #44CFFF 118.4%);
+.exception-box3 {
+  background: linear-gradient(170deg, #6731ec 1.65%, #44cfff 118.4%);
 }
 
-.exception-box4{
-  background: linear-gradient(351deg, #5037E7 12.36%, #EB00FF 124.69%);
+.exception-box4 {
+  background: linear-gradient(351deg, #5037e7 12.36%, #eb00ff 124.69%);
 }
 
-.exception-box5{
-  background: radial-gradient(101.72% 63.11% at 69.09% 71.59%, #313741 0%, #252A31 100%);
+.exception-box5 {
+  background: radial-gradient(
+    101.72% 63.11% at 69.09% 71.59%,
+    #313741 0%,
+    #252a31 100%
+  );
 }
 
-.exception-box6{
-  background: linear-gradient(168deg, #D613EE -55.05%, #FF674E 64.52%);
+.exception-box6 {
+  background: linear-gradient(168deg, #d613ee -55.05%, #ff674e 64.52%);
 }
 
-.exception-box7{
-  background: #0C1947;
+.exception-box7 {
+  background: #0c1947;
 }
 
-.exception-box7 button{
-  background: linear-gradient(90deg,rgba(82,99,160,.13) 4.25%,rgba(82,99,160,.06) 94.43%);
+.exception-box7 button {
+  background: linear-gradient(
+    90deg,
+    rgba(82, 99, 160, 0.13) 4.25%,
+    rgba(82, 99, 160, 0.06) 94.43%
+  );
+}
+
+.save-time h1:hover {
+  background: linear-gradient(
+    269deg,
+    #fa12e3 1.83%,
+    #7612fa 53.68%,
+    #12d0fa 106.48%
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent; /* For Safari/WebKit browsers */
+  background-clip: text;
+  color: transparent; /* Fallback color for non-supporting browsers */
+  cursor: pointer;
+  transition: 2s ease-in-out;
+}
+
+.save-time .active {
+  background: linear-gradient(
+    269deg,
+    #fa12e3 1.83%,
+    #7612fa 53.68%,
+    #12d0fa 106.48%
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent; /* For Safari/WebKit browsers */
+  background-clip: text;
+  color: transparent; /* Fallback color for non-supporting browsers */
+  cursor: pointer;
+  transition: 2s ease-in-out;
+}
+
+.save-time .nonactive {
+  color: rgba(127, 118, 179, 0.6);
+}
+
+.or{
+  background: url(./assets/or-image.svg);
+  /* background-position: center; */
+  background-repeat: no-repeat;
+  background-size: cover;
+  border: 1px solid red;
 }

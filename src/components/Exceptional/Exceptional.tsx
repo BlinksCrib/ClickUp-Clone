@@ -3,6 +3,9 @@ import board from "../../assets/view-work-your-way.png";
 import search from "../../assets/search-everything.png";
 import julie from "../../assets/stay-ahead.png";
 import globe from "../../assets/teams-worldwide-planet.png";
+import integration from "../../assets/clickup-integrations.svg";
+import integrationReplace from "../../assets/clickup-integration-replaces.svg";
+// import or from "../"
 
 import {
   CalenderArrow,
@@ -96,7 +99,9 @@ const Exceptional = () => {
                 <div className="exception-box2 sm:h-[380px] h-[420px] rounded-lg">
                   <div className="h-[30%] flex justify-center items-center text-[#ffffff]">
                     <aside className="w-[90%]">
-                      <h1 className="text-2xl font-bold mt-10">View work your way</h1>
+                      <h1 className="text-2xl font-bold mt-10">
+                        View work your way
+                      </h1>
                       <p className="mt-2">
                         Instantly switch between 15 views including list, board,
                         gantt, and more.
@@ -146,14 +151,35 @@ const Exceptional = () => {
                     ))}
                   </div>
                 </div>
-                <div className="lg:col-span-2 exception-box4 sm:h-[380px] h-[420px] rounded-lg">
-                  <aside></aside>
-                  <aside></aside>
+                <div className="lg:col-span-2 exception-box4 sm:h-[380px] h-[420px] rounded-lg text-[#ffffff]">
+                  <main className="flex justify-center items-center h-full">
+                    <aside className="w-2/5 h-full z-[3]">
+                     <div className="w-[80%]">
+                     <h1>Plays well with others</h1>
+                      <p>Easily integrates with the tools you already use.</p>
+                      <img src={integration} alt="clickup intergation" className="w-full" />
+                     </div>
+                    </aside>
+                    <aside className="or w-[40%] h-full bg-cente bg-cover bg-no-repeat z-[1]">
+                    </aside>
+                    <aside className="w-2/5 h-full">
+                      <div className="w-[80%]">
+                        <h1>Plays well with others</h1>
+                        <p>Easily integrates with the tools you already use.</p>
+                        <img
+                          src={integrationReplace}
+                          alt="clickup integration replace"
+                        />
+                      </div>
+                    </aside>
+                  </main>
                 </div>
                 <div className="exception-box5 sm:h-[380px] h-[420px] rounded-lg">
                   <div className="flex justify-center items-center h-[30%] text-[#ffffff]">
                     <aside className="w-[90%]">
-                      <h1 className="text-2xl font-bold mt-10">Search everything</h1>
+                      <h1 className="text-2xl font-bold mt-10">
+                        Search everything
+                      </h1>
                       <p className="mt-2">
                         Find any file in ClickUp, a connected app, or your local
                         drive, from one place.
@@ -191,19 +217,28 @@ const Exceptional = () => {
                 <div className="exception-box7 lg:col-span-2 text-[#ffffff] relative sm:h-[380px] h-[420px] rounded-lg lg:mb-0 mb-[5rem]">
                   <div className="flex justify-center items-center">
                     <aside className="w-[90%]">
-                      <h1 className="sm:text-2xl text-lg font-bold mt-4 mb-8">Trusted by over 2,000,000 teams</h1>
+                      <h1 className="sm:text-2xl text-lg font-bold mt-4 mb-8">
+                        Trusted by over 2,000,000 teams
+                      </h1>
                       <div className="grid grid-cols-2 sm:w-[60%] w-[90%]">
                         {figure?.map((item, i) => (
                           <div
                             className="flex justify-center items-start flex-col mb-6"
                             key={i}
                           >
-                            <h2 className="font-bold text-2xl">{item.number}M+</h2>
-                            <p className="text-[#5e6fac] text-nowrap">{item.name}</p>
+                            <h2 className="font-bold text-2xl">
+                              {item.number}M+
+                            </h2>
+                            <p className="text-[#5e6fac] text-nowrap">
+                              {item.name}
+                            </p>
                           </div>
                         ))}
                       </div>
-                      <button className="py-3 sm:w-[55%] w-[80%] font-bold lg:mt-6 rounded-lg">Join today for free <i className="fa-solid fa-arrow-right ml-2"></i></button>
+                      <button className="py-3 sm:w-[55%] w-[80%] font-bold lg:mt-6 rounded-lg">
+                        Join today for free{" "}
+                        <i className="fa-solid fa-arrow-right ml-2"></i>
+                      </button>
                     </aside>
                   </div>
                   <img

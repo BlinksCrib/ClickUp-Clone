@@ -42,26 +42,28 @@ const LoveClickup = () => {
             </p>
           </header>
 
-          <main className="flex justify-center items-center w-full overflow-x-scroll overflow-y-hidden mt-10">
+          <main className="flex justify-start items-start w-full overflow-x-scroll overflow-y-hidden mt-10">
             {team?.map((item, i) => (
               <div
-                className="relative w-[380px] h-[580px] flex justify-center items-center text-[#ffffff] mr-[2rem] rounded-lg"
+                className="flex justify-center items-center lg:first:ml-0 first:ml-[1rem] w-full"
                 key={i}
               >
-                <img
-                  src={item.clientImg}
-                  alt="client picture"
-                  className="absolute z-[1] w-full h-full object-cover rounded-lg"
-                />
-                <div className="love_clickup absolute z-[2] h-[50%] w-full rounded-br-lg rounded-bl-lg">
-                  <small>
-                    <item.clientLogo />
-                  </small>
-                  <h6 className="font-semibold mt-6">{item.desc}</h6>
-                  <div className="flex justify-end items-end ">
-                    <button className="w-full bg-[rgba(255,255,255,0.1)] mt-8 py-2 rounded-lg">
-                      Read story <i className="fa-solid fa-turn-up ml-2"></i>
-                    </button>
+                <div className="relative w-[350px] h-[580px] flex justify-start items-start flex-col text-[#ffffff] mr-[2rem] rounded-lg">
+                  <img
+                    src={item.clientImg}
+                    alt="client picture"
+                    className="absolute z-[1] w-full h-full object-cover rounded-lg"
+                  />
+                  <div className="love_clickup absolute z-[2] h-[50%] w-full rounded-br-lg rounded-bl-lg">
+                    <small>
+                      <item.clientLogo />
+                    </small>
+                    <h6 className="font-semibold mt-6">{item.desc}</h6>
+                    <div className="flex justify-end items-end ">
+                      <button className="w-full bg-[rgba(255,255,255,0.1)] mt-8 py-2 rounded-lg">
+                        Read story <i className="fa-solid fa-turn-up ml-2"></i>
+                      </button>
+                    </div>
                   </div>
                 </div>
               </div>

@@ -1,8 +1,8 @@
 const Unleash = () => {
   return (
     <section>
-      <div className="flex justify-center items-center w-full">
-        <div className="mt-[4rem] bg-center bg-cover w-[100%] h-[180vh] unleash-bg flex justify-center items-center">
+      <div className="lg:flex hidden justify-center items-center w-full">
+        <div className="mt-[6rem] bg-center bg-cover w-[100%] h-[180vh] unleash-bg flex justify-center items-center">
           <div className="w-[55%] flex justify-center items-center flex-col">
             <h1 className="text-5xl font-extrabold text-[#ffffff]">
               Ready to unleash your team's full potential?

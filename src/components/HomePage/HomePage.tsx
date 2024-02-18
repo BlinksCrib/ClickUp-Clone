@@ -3,8 +3,8 @@ import { Review, Star } from "../../utils/Icons";
 const HomePage = () => {
   return (
     <div>
-      <div className="flex justify-center items-center w-full h-[100vh]">
-        <div className="flex justify-center items-center h-full flex-col lg:w-[50%] w-[95%] text-center">
+      <div className="flex justify-center items-center w-full ">
+        <div className="flex justify-center items-center h-full flex-col lg:w-[50%] w-[95%] text-center mt-[7rem]">
           <div className="bg-black rounded-full py-1 px-3 text-white mb-3">
             <p>Discover the all-new ClickUp 3.0</p>
           </div>
@@ -19,7 +19,7 @@ const HomePage = () => {
               designed to manage any type of work.
             </h6>
           </div>
-          <button className="btn home-btn text-white px-16 py-4 rounded-lg font-bold text-2xl">
+          <button className="btn home-btn text-white sm:px-16 px-10 py-4 rounded-lg font-bold md:text-2xl text-lg">
             Get Started. It's FREE <i className="fa-solid fa-arrow-right ml-3"></i>
           </button>
           <div className="flex justify-center items-center mt-6 lg:flex-row flex-col">

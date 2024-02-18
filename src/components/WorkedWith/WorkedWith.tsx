@@ -12,10 +12,10 @@ import {
 const WorkedWith = () => {
   return (
     <section>
-      <div className="w-full flex justify-center items-center mt-[6rem]">
+      <div className="w-full flex justify-center items-center mt-[6rem] mb-[5rem]">
         <div className="lg:w-[90%] w-full flex justify-center items-center lg:flex-col flex-col-reverse">
           <div className="flex justify-center items-center mb-10 lg:w-full w-[90%] lg:flex-row flex-col">
-            <h4 className="font-bold">
+            <h4 className="font-bold text-center">
               95% of users increased their productivity after switching to
               ClickUp.
             </h4>

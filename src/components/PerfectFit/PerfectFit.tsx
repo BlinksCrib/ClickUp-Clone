@@ -161,7 +161,7 @@ const PerfectFit = () => {
                 className="flex justify-center items-center first:ml-[1rem]"
                 key={i}
               >
-                <div className=" w-[340px] h-[520px] flex justify-start items-start flex-col bg-[#ffffff] border border-[#ceceea] rounded-md py-10 px-[2rem] mr-[2rem]">
+                <div className=" w-[340px] h-[520px] flex justify-start items-start flex-col bg-[#ffffff] border border-[#ceceea] rounded-lg py-10 px-[2rem] mr-[2rem]">
                   <div className="flex justify-center items-center mt-2">
                     <small>
                       <item.icon />
